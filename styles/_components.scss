@@ -1,0 +1,37 @@
+main {
+    box-shadow: var(--shadow-light);
+    border: 1px solid var(--shadow-dark);
+}
+
+//Communtiy
+.community{
+    background-color: var(--color-white);
+    border-bottom: var(--line);
+}
+
+//Monthly Subscription
+.monthlySubscription {
+    background-color: var(--color-cyan);
+}
+
+.whyUs {
+    background-color: var(--color-light-blue);
+}
+
+//Button
+%btn-shared {
+    border-radius: 0.5rem;
+	border: none;
+	cursor: pointer;
+	font-size: 1.6rem;
+	padding: 1.5rem 6rem;
+}
+
+.btn {
+    &-green {
+        @extend %btn-shared;
+        background-color: var(--color-dark-green);
+        color: var(--color-white);
+    }
+
+}

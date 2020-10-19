@@ -1,0 +1,35 @@
+//Heading
+.heading-primary {
+    color: var(--color-cyan);
+    font-size: 3.5rem;
+}
+
+.heading-secondary {
+    color: var(--color-light-grey);
+    font-size: 2.5rem;
+}
+
+//Paragraph
+.para-primary{
+    color: var(--color-dark-green);
+    font-size: 2rem;
+}
+
+.para-secondary {
+    font-size: 1.5rem;
+}
+
+.lead {
+    color: var(--color-greyish-blue);
+    font-size: 1.5rem;
+}
+
+//Dollar symbol
+.dollar {
+    font-size: 2.5rem;
+}
+
+//List inside ul
+.list > * {
+    font-size: 1.5rem;
+}

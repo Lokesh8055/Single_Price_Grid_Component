@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --color-cyan: hsl(179, 62%, 43%);
+  --color-light-blue: #48dbfb;
+  --color-dark-green: #b8e994;
+  --color-bright-yellow: hsl(71, 73%, 54%);
+  --color-light-grey: hsl(204, 43%, 93%);
+  --color-greyish-blue: hsl(218, 22%, 67%);
+  --color-grey-light-2: #f4f2f2;
+  --color-white: #fff;
+  --font-karla: 'Karla', sans-serif;
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+* {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-karla);
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--color-white);
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: [full-start] 1fr [center-start] ([col-start] minmax(min-content, 14rem) [col-end])[7] [center-end] 1fr [full-end];
+      grid-template-columns: [full-start] 1fr [center-start] repeat(7, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+      grid-template-columns: [full-start] 1fr [center-start] repeat(7, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+}
+
+.container > * {
+  grid-column: center-start/ center-end;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+}
+
+.about > .whyUs {
+  grid-column: col-start 4 / center-end;
+}
+
+.container {
+  margin: 8rem 0;
+}
+
+.center {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li, a, button {
+  text-decoration: none;
+}
+
+/* Padding */
+.p {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.pr-1 {
+  padding-right: 0.5rem;
+}
+
+.py {
+  padding: 0.5rem 0;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.pt {
+  padding: 0.5rem 0;
+}
+
+.pt-1 {
+  padding: 0.8rem 0;
+}
+
+.pt-2 {
+  padding: 1.5rem 0;
+}
+
+.pt-3 {
+  padding: 2rem 0;
+}
+
+.pb {
+  padding: 0.5rem 0;
+}
+
+.pb-1 {
+  padding: 0.8rem 0;
+}
+
+.pb-2 {
+  padding: 1.5rem 0;
+}
+
+.pb-3 {
+  padding: 2rem 0;
+}
+
+/* Margin */
+.m {
+  margin: 0.5rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my {
+  margin: 0.5rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.heading-primary {
+  color: var(--color-cyan);
+  font-size: 3.5rem;
+}
+
+.heading-secondary {
+  color: var(--color-light-grey);
+  font-size: 2.5rem;
+}
+
+.para-primary {
+  color: var(--color-dark-green);
+  font-size: 2rem;
+}
+
+.para-secondary {
+  font-size: 1.5rem;
+}
+
+.lead {
+  color: var(--color-greyish-blue);
+  font-size: 1.5rem;
+}
+
+.dollar {
+  font-size: 2.5rem;
+}
+
+.list > * {
+  font-size: 1.5rem;
+}
+
+main {
+  -webkit-box-shadow: var(--shadow-light);
+          box-shadow: var(--shadow-light);
+  border: 1px solid var(--shadow-dark);
+}
+
+.community {
+  background-color: var(--color-white);
+  border-bottom: var(--line);
+}
+
+.monthlySubscription {
+  background-color: var(--color-cyan);
+}
+
+.whyUs {
+  background-color: var(--color-light-blue);
+}
+
+.btn-green {
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 6rem;
+}
+
+.btn-green {
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+}

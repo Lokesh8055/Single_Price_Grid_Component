@@ -1,0 +1,48 @@
+//Flex Layout
+// .container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .about {
+//     display: flex;
+//     align-items: stretch;
+// }
+
+// .flex {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// @media screen and (max-width: 768px){
+//     .about {
+//         display: block;
+//     }
+// }
+
+//Grid layout
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-template-columns:
+    [full-start] 1fr
+    [center-start] repeat(7, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] 1fr [full-end];
+
+    & > * {
+        grid-column: center-start/ center-end;
+    }  
+}
+
+.about{
+    display: grid;
+    
+    & > .whyUs {
+        grid-column: col-start 4 / center-end;
+    }
+}
+
+
